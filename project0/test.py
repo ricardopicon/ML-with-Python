@@ -1,3 +1,4 @@
+from main import randomization
 import traceback
 import torch.nn as nn
 
@@ -70,6 +71,7 @@ def main():
         check_matplotlib()
         check_torch()
         check_tqdm()
+        print(randomization(2))
     except Exception:
         log_exit(traceback.format_exc())
 
